@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    height: 100vh;
+}
+.content-container{
+    display: flex;
+    height: inherit;
+    padding: 40px 80px 80px 80px;
+    justify-content: space-between  ;
+}
+.left-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.weather-title{
+    font-size: 17px;
+    /* change Font Family */
+    font-family: 'Roboto',sans-serif;
+    font-weight: 500;
+}
+.temperature-container{
+    display: flex;
+    align-items: center;
+    margin-left: -3px;
+}
+.temperature-text{
+    font-size: 85px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 10px;
+}
+.cloud-icon {
+    font-size: 110px !important;  
+}
+.location-container{
+    margin-top: -10px;
+
+}
+#location{
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 10px;
+}
+.today-status-container{
+    margin-top: -8px;
+}
+.time{
+    margin-right: 5px;
+}
+.time, .date{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'inter','sans-serif';
+    letter-spacing: 3px;
+}
+.seperator{
+    width: 1px;
+    background: rgb(40, 40, 40);
+    margin: 0 5px;
+}

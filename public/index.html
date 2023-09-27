@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather.Etherms</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div class="content-container">
+    <div class="left-container">
+        <div class="left-top-content">
+            <div class="weather-title">Weather - Etherms</div>
+        </div>
+        <div class="left-bottom-content">
+            <div class="temperature-container">
+                <span class="temperature-text"><span id="temperature">15</span>&deg;C</span>
+                <span class="material-symbols-outlined cloud-icon" id="cloud-icon"|>
+                    cloud
+                    </span>
+            </div>
+            <div class="location-container">
+                <h3 id="location">Metro Manila</h3>
+            </div>
+            <div class="today-status-container d-flex">
+                <span id="time"></span>
+                <div class="seperator"></div>
+                <span id="date"></span>
+            </div>
+        </div>
+
+    </div>
+    <div class="right-container">
+        <div class="search-container d-flex bg-secondary-subtle">
+            <input type="text" placeholder="Enter Your Location" class="city-input">
+            <button class="citySearch-button"><span class="material-symbols-outlined">search</span></button>
+        </div>
+        <div class="current-weather" style="background: green;
+        width: 400px; height: 180px; display: flex;">
+            <div class="left-current-weather">
+                <div class="info-container"> <img src="" alt="feels-like icon"><span></span>Feels like</div>
+                <div class="info-container"><img src="" alt="high-low-icon"><span>High / Low</span></div>
+                <div class="info-container"><img src="" alt="humidity-icon"><span>Humidity</span></div>
+            </div>
+            <div class="right-current-weather">
+                <div class="info-container"><img src="" alt="pressure-icon"><span>Presssure</span></div>
+                <div class="info-container"><img src="" alt="wind-speed-icon"><span>Wind Speed</span></div>
+                <div class="info-container"><img src="" alt="visibility-icon"><span>Visibility</span></div>
+            </div>
+        </div>
+        <div class="five-day-forcast" style=" background:red; width: 400px; height: 380px;">
+            <div class="day-info-container">
+                <span>Today</span>
+                <div class="progress-bar"></div>
+                <span class="day-temp">22 &deg; C</span>
+            </div>
+            <div class="day-info-container">
+                <span class="second-day">Tue</span>
+                <div class="progress-bar"></div>
+                <span class="day-temp">22 &deg; C</span>
+            </div>
+            <div class="day-info-container">
+                <span class="third-day">Wed</span>
+                <div class="progress-bar"></div>
+                <span class="day-temp">22 &deg; C</span>
+            </div>
+            <div class="day-info-container">
+                <span class="fourth-day">Thu</span>
+                <div class="progress-bar"></div>
+                <span class="day-temp">22 &deg; C</span>
+            </div>
+            <div class="day-info-container">
+                <span class="fifth-day">Fri</span>
+                <div class="progress-bar"></div>
+                <span class="day-temp">22 &deg; C</span>
+            </div>
+        </div>
+        
+    </div>
+    </div>
+        <script defer src="./js/index.js"></script>
+        <script defer src="./js/Date.js"></script>
+        <script defer src = "./js/Clock.js"></script>
+</body>
+</html>
