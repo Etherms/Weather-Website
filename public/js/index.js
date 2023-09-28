@@ -1,13 +1,3 @@
-const apiKey = 'b4f14acde9128b8d3aa7f19726393199';
-const searchButton = document.querySelector('.citySearch-button');
-
-const tempContainer = document.getElementById("temperature");
-const cityContainer = document.getElementById("location");
-const timeContainer = document.getElementById("time");
-const dateContainer = document.getElementById("date");
-const cloudContainer = document.getElementById("cloud-icon");
-
-
 async function fetchWeatherData(cityInput) {
     if (cityInput === '') {
         console.error('City input is empty');
@@ -28,6 +18,18 @@ async function fetchWeatherData(cityInput) {
 
         tempContainer.innerHTML = `${parseInt(currentWeatherData.main.temp)}`;
         cityContainer.innerHTML = `${currentWeatherData.name}`;
+
+        feelsLike.innerHTML = `${currentWeatherData.main.feels_like}`;
+
+
+        highLow.innerHTML = `${Math.ceil(currentWeatherData.main.temp_max)}℃ / ${Math.ceil(currentWeatherData.main.temp_min)}℃`;
+        humidity.innerHTML = `${currentWeatherData.main.humidity}%`;
+        pressure.innerHTML = `${currentWeatherData.main.pressure}pb`;
+        windSpeed.innerHTML = `${currentWeatherData.wind.speed}km/h`;
+        visibility.innerHTML = `${currentWeatherData.weather[0].description}`;
+        
+
+
         const response_1 = await fetch(forecastURL);
         if (!response_1.ok) {
             throw new Error(`Forecast API response was not ok (${response_1.status})`);

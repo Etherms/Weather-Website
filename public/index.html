@@ -39,19 +39,52 @@
             <input type="text" placeholder="Enter Your Location" class="city-input">
             <button class="citySearch-button"><span class="material-symbols-outlined">search</span></button>
         </div>
-        <div class="current-weather" style="background: green;
-        width: 400px; height: 180px; display: flex;">
+
+
+
+
+        <div class="current-weather" >
             <div class="left-current-weather">
-                <div class="info-container"> <img src="" alt="feels-like icon"><span></span>Feels like</div>
-                <div class="info-container"><img src="" alt="high-low-icon"><span>High / Low</span></div>
-                <div class="info-container"><img src="" alt="humidity-icon"><span>Humidity</span></div>
+                <div class="info-container">
+                    <span class="material-symbols-outlined info-icon">nest_thermostat_gen_3</span>
+                    <em>Feels like</em>
+                    <span id="feels-like"class="info-value">38.01</span> <span>&deg;C</span>
+                </div>
+                <div class="info-container">
+                    <span class="material-symbols-outlined info-icon">device_thermostat</span>
+                    <em>High / Low</em>
+                    <span id="high-low" class="info-value">31&deg;C / 30&deg;C</span>
+                </div>
+                <div class="info-container">
+                    <span class="material-symbols-outlined info-icon">visibility</span>
+                    <em>Visibility</em>
+                    <span id="visibility" class="visibility info-value">broken clouds</span>
+                </div>
             </div>
             <div class="right-current-weather">
-                <div class="info-container"><img src="" alt="pressure-icon"><span>Presssure</span></div>
-                <div class="info-container"><img src="" alt="wind-speed-icon"><span>Wind Speed</span></div>
-                <div class="info-container"><img src="" alt="visibility-icon"><span>Visibility</span></div>
+                <div class="info-container">
+                    <span class="material-symbols-outlined info-icon">compare_arrows</span>
+                    <em>Presssure</em>
+                    <span id="pressure" class="info-value">
+                        1009pb</span>
+                </div>
+                <div class="info-container">
+                    <span class="material-symbols-outlined info-icon">air</span>
+                    <em>Wind Speed</em>
+                    <span id="windspeed" class="info-value">2.06 km/h</span>
+                </div>
+                <div class="info-container">
+                    <span class="material-symbols-outlined info-icon">water_drop</span>
+                    <em>Humidity</em>
+                    <span id="humidity" class="info-value">75 %</span>
+                </div>
             </div>
         </div>
+
+
+
+
+
         <div class="five-day-forcast" style=" background:red; width: 400px; height: 380px;">
             <div class="day-info-container">
                 <span>Today</span>
@@ -82,6 +115,7 @@
         
     </div>
     </div>
+        <script defer src="./js/constVariables.js"></script>
         <script defer src="./js/index.js"></script>
         <script defer src="./js/Date.js"></script>
         <script defer src = "./js/Clock.js"></script>

@@ -10,14 +10,19 @@
 
 body{
     height: 100vh;
+    background-image: url(../img/raining-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
 }
 .content-container{
-    display: flex;
+    display: flex;  
     height: inherit;
     padding: 40px 80px 80px 80px;
     justify-content: space-between  ;
 }
 .left-container{
+    color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -69,3 +74,41 @@ body{
     background: rgb(40, 40, 40);
     margin: 0 5px;
 }
+
+.current-weather{
+
+    width: 400px; 
+    height: 180px; 
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 0;
+}
+.left-current-weather, .right-current-weather{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.info-container{
+    background: rgba(255, 255, 255, 0.149);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.6px);
+    -webkit-backdrop-filter: blur(5.6px);
+    border: 1px solid rgba(255, 255, 255, 0.23);
+    display: flex;
+    align-items: center;
+    padding: 17px 8px;
+    margin: 1px 1px 5px 2px;
+    white-space: nowrap;
+}
+.info-container .info-icon{
+    margin-right: 5px;
+}
+.info-container em{
+    margin-right: 10px;
+}
+.info-value{
+    font-family:'inter',sans-serif; ;
+}
+
