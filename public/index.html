@@ -19,14 +19,14 @@
         <div class="left-bottom-content">
             <div class="temperature-container">
                 <span class="temperature-text"><span id="temperature">15</span>&deg;C</span>
-                <span class="material-symbols-outlined cloud-icon" id="cloud-icon"|>
-                    cloud
+                <span class="material-symbols-outlined" id="cloud-icon"|>
+                    cloudy_snowing
                     </span>
             </div>
             <div class="location-container">
                 <h3 id="location">Metro Manila</h3>
             </div>
-            <div class="today-status-container d-flex">
+            <div class="today-status-container d-flex align-items-center">
                 <span id="time"></span>
                 <div class="seperator"></div>
                 <span id="date"></span>
@@ -52,7 +52,7 @@
                 </div>
                 <div class="info-container">
                     <span class="material-symbols-outlined info-icon">device_thermostat</span>
-                    <em>High / Low</em>
+                    <em>High / Low</em> 
                     <span id="high-low" class="info-value">31&deg;C / 30&deg;C</span>
                 </div>
                 <div class="info-container">
@@ -66,7 +66,7 @@
                     <span class="material-symbols-outlined info-icon">compare_arrows</span>
                     <em>Presssure</em>
                     <span id="pressure" class="info-value">
-                        1009pb</span>
+                        1009 atm</span>
                 </div>
                 <div class="info-container">
                     <span class="material-symbols-outlined info-icon">air</span>
@@ -85,36 +85,54 @@
 
 
 
-        <div class="five-day-forcast" style=" background:red; width: 400px; height: 380px;">
+        <div class="five-day-forcast">
             <div class="day-info-container">
-                <span>Today</span>
-                <div class="progress-bar"></div>
-                <span class="day-temp">22 &deg; C</span>
+                <div class="day-cloud">
+                    <span class="start-day date-name">Today</span>
+                    <span class="material-symbols-outlined">rainy</span>
+                </div>
+                <div class="progress-bar progress-today"></div>
+                <span id="first-temp" class="day-temp"></span> <span>&deg;C</span>
             </div>
             <div class="day-info-container">
-                <span class="second-day">Tue</span>
-                <div class="progress-bar"></div>
-                <span class="day-temp">22 &deg; C</span>
+                <div class="day-cloud">
+                    <span class="second-day date-name">Tue</span>
+                    <span class="material-symbols-outlined">rainy</span>
+                </div>
+
+                <div class="progress-bar progress-second-day"></div>
+                <span id="second-temp"  class="day-temp"></span><span>&deg;C</span>
             </div>
             <div class="day-info-container">
-                <span class="third-day">Wed</span>
-                <div class="progress-bar"></div>
-                <span class="day-temp">22 &deg; C</span>
+                <div class="day-cloud">
+                    <span class="third-day date-name">Wed</span>
+                    <span class="material-symbols-outlined">foggy</span>
+                </div>
+                <div class="progress-bar progress-third-day"></div>
+                <span id="third-temp"  class="day-temp"></span><span>&deg;C</span>
             </div>
             <div class="day-info-container">
-                <span class="fourth-day">Thu</span>
-                <div class="progress-bar"></div>
-                <span class="day-temp">22 &deg; C</span>
+                <div class="day-cloud">
+                    <span class="fourth-day date-name">Thu</span>
+                    <span class="material-symbols-outlined">partly_cloudy_day</span>
+                </div>
+                <div class="progress-bar progress-fourth-day"></div>
+                <span id="fourth-temp" class="day-temp"></span><span>&deg;C</span>
             </div>
             <div class="day-info-container">
-                <span class="fifth-day">Fri</span>
-                <div class="progress-bar"></div>
-                <span class="day-temp">22 &deg; C</span>
+                <div class="day-cloud">
+                    <span class="fifth-day date-name">Fri</span>
+                    <span class="material-symbols-outlined">partly_cloudy_day</span>
+                </div>
+                <div class="progress-bar progress-fifth-day"></div>
+                <span  id="fifth-temp" class="day-temp"></span><span>&deg;C</span>
             </div>
         </div>
         
     </div>
     </div>
+        <script defer src="./js/addDataValues.js"></script>
+        <script defer src="./js/forecast.js"></script>
         <script defer src="./js/constVariables.js"></script>
         <script defer src="./js/index.js"></script>
         <script defer src="./js/Date.js"></script>
