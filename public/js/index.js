@@ -40,7 +40,7 @@ searchButton.addEventListener('click', () => {
     const cityInput = document.querySelector('input.city-input').value;
 
     fetchWeatherData(cityInput).then((currentWeather) => {
-        console.log(currentWeather);
+        // console.log(currentWeather);
         addCurrentWeatherValues(currentWeather);
         changeCloudLayout(currentWeather);
     }).catch((error) => {
