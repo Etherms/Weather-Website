@@ -16,15 +16,19 @@
             <div class="weather-title">Weather - Etherms</div>
         </div>
         <div class="left-bottom-content">
+            <div class="location-container">
+                <h3 id="location">Metro Manila</h3>
+            </div>
             <div class="temperature-container">
                 <span class="temperature-text"><span id="temperature">15</span>&deg;C</span>
                 <span class="material-symbols-outlined" id="cloud-icon"|>
                     cloudy_snowing
                     </span>
             </div>
-            <div class="location-container">
-                <h3 id="location">Metro Manila</h3>
+            <div class="description-container">
+                <span id="description">Cloudy with a chance of meatballs</span>
             </div>
+
             <div class="today-status-container d-flex align-items-center">
                 <span id="time"></span>
                 <div class="seperator"></div>
@@ -88,15 +92,15 @@
             <div class="day-info-container">
                 <div class="day-cloud">
                     <span class="start-day date-name">Today</span>
-                    <span class="material-symbols-outlined">rainy</span>
+                    <span class="material-symbols-outlined" id="first-day-cloud">rainy</span>
                 </div>
                 <div class="progress-bar progress-today"></div>
                 <span id="first-temp" class="day-temp"></span> <span>&deg;C</span>
             </div>
             <div class="day-info-container">
                 <div class="day-cloud">
-                    <span class="second-day date-name">Tue</span>
-                    <span class="material-symbols-outlined">rainy</span>
+                    <span class="second-day date-name" id="second-date"></span>
+                    <span class="material-symbols-outlined" id="second-day-cloud">rainy</span>
                 </div>
 
                 <div class="progress-bar progress-second-day"></div>
@@ -104,24 +108,24 @@
             </div>
             <div class="day-info-container">
                 <div class="day-cloud">
-                    <span class="third-day date-name">Wed</span>
-                    <span class="material-symbols-outlined">foggy</span>
+                    <span class="third-day date-name" id="third-date"></span>
+                    <span class="material-symbols-outlined" id="third-day-cloud">foggy</span>
                 </div>
                 <div class="progress-bar progress-third-day"></div>
                 <span id="third-temp"  class="day-temp"></span><span>&deg;C</span>
             </div>
             <div class="day-info-container">
                 <div class="day-cloud">
-                    <span class="fourth-day date-name">Thu</span>
-                    <span class="material-symbols-outlined">partly_cloudy_day</span>
+                    <span class="fourth-day date-name" id="fourth-date"></span>
+                    <span class="material-symbols-outlined" id="fourth-day-cloud">partly_cloudy_day</span>
                 </div>
                 <div class="progress-bar progress-fourth-day"></div>
                 <span id="fourth-temp" class="day-temp"></span><span>&deg;C</span>
             </div>
             <div class="day-info-container">
                 <div class="day-cloud">
-                    <span class="fifth-day date-name">Fri</span>
-                    <span class="material-symbols-outlined">partly_cloudy_day</span>
+                    <span class="fifth-day date-name" id="fifth-date"></span>
+                    <span class="material-symbols-outlined" id="fifth-day-cloud">partly_cloudy_day</span>
                 </div>
                 <div class="progress-bar progress-fifth-day"></div>
                 <span  id="fifth-temp" class="day-temp"></span><span>&deg;C</span>

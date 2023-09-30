@@ -1,4 +1,5 @@
 function addCurrentWeatherValues(currentWeatherData){
+    console.log(currentWeatherData);
     tempContainer.innerHTML = `${parseInt(currentWeatherData.main.temp)}`;
     cityContainer.innerHTML = `${currentWeatherData.name}`;
 
@@ -8,6 +9,7 @@ function addCurrentWeatherValues(currentWeatherData){
     pressure.innerHTML = `${currentWeatherData.main.pressure} atm`;
     windSpeed.innerHTML = `${currentWeatherData.wind.speed} km/h`;
     visibility.innerHTML = `${currentWeatherData.weather[0].description}`;
+    mainDescription.innerHTML = `${currentWeatherData.weather[0].main}`;   
 }
 
 function changeCloudLayout (currentWeatherData){
