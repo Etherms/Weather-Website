@@ -1,3 +1,4 @@
+/** An asyn function that request the data for the current weather**/
 async function fetchWeatherData(cityInput) {
   if (cityInput === '') {
     console.error('City input is empty');
@@ -13,10 +14,33 @@ async function fetchWeatherData(cityInput) {
     cityContainer.innerHTML = cityInput;
     return currentWeatherData;
   } catch (error) {
-    alert(error);
+    console.error(error);
   }
 }
 
+
+
+
+
+fetchWeatherData("manila").then((currentWeather) => {
+  // console.log(currentWeather);
+  addCurrentWeatherValues(currentWeather);
+  changeCloudLayout(currentWeather);
+}).catch((error) => {
+  console.error(error);
+});
+
+
+fetchForecastData("manila").then((forecastFuture) =>{
+  addForecastValues(forecastFuture);
+})
+    .catch((error) => {
+      console.error(error);
+    });
+
+/** 
+ * An asyn function that request the data for the 5 day forecast
+ * @param {string} cityInput - location of the weather to fetch  **/
 async function fetchForecastData(cityInput) {
   if (cityInput === '') {
     console.error('City input is empty');
@@ -30,7 +54,7 @@ async function fetchForecastData(cityInput) {
     }
     return forecastData = await response.json();
   } catch (error) {
-    alert(error);
+    console.error(error);
   }
 }
 

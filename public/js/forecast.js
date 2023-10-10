@@ -39,7 +39,7 @@ function addCloudsForecast(forecastData) {
   }
 }
 
-
+/** Function to get the lowest and highest temperature value**/
 function getLowestandHighestTemp(fiveDayTemp) {
   let lowestValue = fiveDayTemp[0];
   let highestValue = fiveDayTemp[0];
@@ -56,7 +56,7 @@ function getLowestandHighestTemp(fiveDayTemp) {
   return [lowestValue, highestValue];
 }
 
-// forecast range computation
+/** forecast range computation **/
 function addTempRange(lowestValue, highestValue, fiveDayTemp) {
   const lowest = lowestValue - 10;
   const highest = highestValue + 10;
@@ -83,7 +83,7 @@ function addTempRange(lowestValue, highestValue, fiveDayTemp) {
   }
 }
 
-
+/**  Function that uses the data from the forecast json and show it in the UI **/
 function addForecastValues(forecastData) {
   const fiveDayTemp = [];
 

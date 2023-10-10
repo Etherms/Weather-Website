@@ -7,7 +7,7 @@
     --fourth-day-progress:10%;
     --fifth-day-progress:20%;
 
-    --backround-image: url(../img/haze-background.jpg);
+    --backround-image: url();
 
     --primary-font:'Martian Mono', monospace;
     --secondary-font: 'Nunito Sans', sans-serif;
@@ -37,7 +37,7 @@ body{
 .content-container{
     display: flex;  
     height: inherit;
-    padding: 40px 80px 80px 80px;
+    padding: 30px 50px;
     justify-content: space-between  ;
 }
 .left-container{
@@ -115,18 +115,17 @@ body{
     height: 15px;
 }
 
-.current-weather{
-
-    width: 400px; 
-    height: 180px; 
+.current-weather {
+    width: 400px;
+    height: 40%;
     display: flex;
     justify-content: space-evenly;
-    margin: 10px 0;
 }
 .left-current-weather, .right-current-weather{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    padding: 0 2px;
 }
 
 /* Right content CSS */
@@ -166,18 +165,30 @@ body{
     border: 1px solid rgba(255, 255, 255, 0.23);
     display: flex;
     align-items: center;
-    padding: 17px 8px;
-    margin: 1px 1px 5px 2px;
+    padding: 13px 7px;
     white-space: nowrap;
+    font-size: 14px;
+    color: white;
+    text-shadow: 2px 2px 5px rgb(47, 47, 47);
 }
+
 .info-container .info-icon{
     margin-right: 5px;
+
 }
 .info-container em{
+    font-family: var(--tertiary-font) ;
     margin-right: 10px;
+
 }
 .info-value{
-    font-family:'inter',sans-serif; ;
+    font-family: var(--secondary-font) ;
+    font-weight: 600;;
+}
+.feels-degrees{
+    font-family: var(--secondary-font) ;
+    font-weight: 600;
+
 }
 
 /* Lower Information CSS */
@@ -194,6 +205,8 @@ body{
     flex-direction: column;
     justify-content: space-evenly;
     padding: 5px 15px ;
+    color: white;
+    text-shadow: 2px 2px 5px black;
 }
 .day-info-container{
     display: flex;

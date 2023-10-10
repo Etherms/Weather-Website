@@ -1,5 +1,4 @@
 function addCurrentWeatherValues(currentWeatherData) {
-  console.log(currentWeatherData);
   tempContainer.innerHTML = `${parseInt(currentWeatherData.main.temp)}`;
   cityContainer.innerHTML = `${currentWeatherData.name}`;
 
@@ -12,6 +11,7 @@ function addCurrentWeatherValues(currentWeatherData) {
   mainDescription.innerHTML = `${currentWeatherData.weather[0].main}`;
 }
 
+/** Function that changes the main cloud depending on the current weather **/
 function changeCloudLayout(currentWeatherData) {
   switch (currentWeatherData.weather[0].main) {
     case 'Clear':
