@@ -258,3 +258,22 @@ body{
 .progress-fifth-day::before{
     width: var(--fifth-day-progress);
 }
+
+div#city-inputautocomplete-list {
+    position: absolute;
+    background: white;
+    z-index: 1;
+    top: 45px;
+    padding: 6px 10px;
+    width: 400px;
+    border-radius: 10px;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+.autocomplete-active {
+    background: #4f83d363;
+    border-radius: 9px;
+}
+.autocomplete-items > * {
+    padding:10px;
+  }

@@ -82,6 +82,7 @@ searchButton.addEventListener('click', () => {
 const newCityInput = document.getElementById('city-input');
 
 newCityInput.addEventListener('keypress', function(event) {
+  
   // Check if the pressed key is the Enter key (key code 13)
   if (event.keyCode === 13) {
     const cityInput = document.querySelector('input.city-input').value;
