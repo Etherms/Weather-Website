@@ -16,10 +16,11 @@ function forecastDateString() {
   const DateValues = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
   const currentDate = new Date();
+  const todayIndex = currentDate.getDay();
 
-  secondDayString.innerHTML = DateValues[currentDate.getDay() + 1];
-  thirdDayString.innerHTML = DateValues[currentDate.getDay() + 2];
-  fourthDayString.innerHTML = DateValues[currentDate.getDay() + 3];
-  fifthDayString.innerHTML = DateValues[currentDate.getDay() + 4];
+  secondDayString.innerHTML = DateValues[(todayIndex + 1) % 7];
+  thirdDayString.innerHTML = DateValues[(todayIndex + 2) % 7];
+  fourthDayString.innerHTML = DateValues[(todayIndex + 3) % 7];
+  fifthDayString.innerHTML = DateValues[(todayIndex + 4) % 7];
 }
 forecastDateString();
