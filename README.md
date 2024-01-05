@@ -6,4 +6,3 @@
 This is the README file for Weather API
 It uses <a href="https://openweathermap.org/api">OpenWeathermap API</a> for the data
 
-
